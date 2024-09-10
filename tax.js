@@ -1,11 +1,14 @@
-function calculateTax(income, expense) {
-  let parameterCheck = income < 0 || expense < 0 || income < expense;
+// Problem-01 : Tax Calculator
+
+
+function calculateTax(income, expenses) {
+  let parameterCheck = income < 0 || expenses < 0 || income < expenses;
   let output = 0;
 
   if (parameterCheck) {
     output = "Invalid Input";
   } else {
-    output = ((income - expense) * 20) / 100;
+    output = ((income - expenses) * 20) / 100;
   }
 
   return output;
